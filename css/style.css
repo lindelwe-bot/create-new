@@ -1,0 +1,356 @@
+* {
+margin: 0;
+padding: auto;
+width: 100%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* this is my header section  */
+header {
+display: flex;
+justify-content: space-evenly;
+position: absolute;
+padding-top: 33px;
+align-items: center;
+
+gap:60% ;
+width: 100%;
+
+}
+
+
+header h2{
+padding-top: 5%;
+color: white;
+padding-right: 60%;
+font-weight: 200;
+font-size: larger;
+}
+
+header img{
+width: 20%;
+}
+
+header .header-inner .menu{
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0,  0.459);
+  width: 100%;
+  top: 100%;
+  right: 0;
+  line-height: 30px;
+  transition: 0.7s;
+  z-index: 4;
+}
+
+header .header-inner .menu li{
+  width: 100%;
+}
+
+header .header-inner .menu li a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  font-size: 20px;
+  transition: all 0.7s ease;
+}
+
+
+header .header-inner .menu li:hover a{
+  background-color: rgba(7, 7, 7, 0.704);
+  color: #7e7e7e;
+  width: 100%;
+}
+
+
+header .header-inner .hamburger{
+  position: relative;
+  width: 40px;
+  right: 5px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.734) ;
+  border-radius: 10px;
+  cursor:pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+header .header-inner .hamburger:before,
+header .header-inner .hamburger:after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  right: 0;
+  background:black ;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+header .header-inner .hamburger:before{
+  top: -10px;
+  width: 20px;
+  left: 0;
+}
+
+header .header-inner .hamburger:after{
+  bottom: -10px;
+  width: 20px;
+  right: 0;
+}
+header .header-inner .open{
+background: transparent;
+}
+
+
+header .header-inner .open:before{
+  top: 0%;
+  transform: rotate(405deg);
+  width: 100%;
+}
+
+header .header-inner .open:after{
+  top: 0%;
+  transform: rotate(-405deg);
+  width: 100%;
+}
+
+header .header-inner .menu.dropped{
+  max-height: 800px;
+}
+
+
+#hero{
+height: 100vh;
+width: 100%;
+justify-content: space-evenly;
+font-display: flex;
+background-size: cover;
+background-position: center center;
+background-image:url(/images/Rectangle\ 1.png);
+align-items: center;
+text-align: left;
+color: white;
+top: 100%;
+gap: 20%;
+}
+
+#hero .hero-inner h1{
+  padding-top: 30%;
+  font-weight: 800;
+  font-size: xx-large;
+  color: white;
+}
+@media (min-width: 1024px) {
+  #hero .hero-inner p{
+    padding-left: 70%;
+  }
+
+  #about{
+    display: flex;
+  }
+
+  #about .about-inner{
+    display: flex;
+  }
+
+  
+}
+#hero .hero-inner p{
+  padding-left:90%;
+  font-size: x-large;
+}
+#hero .hero-inner p span{
+  font-weight: bolder;
+  
+}
+
+@media  (min-width:320px) {
+ 
+  #hero .hero-inner h1{
+    padding-top:120% ;
+  }
+
+  #hero .hero-inner p{
+    padding-left:  20%;
+  }
+
+  #about{
+  display: grid;
+  }
+
+  #about .about-inner .button h5 {
+padding-top: 240%;
+}
+
+#service .service-inner .cards img{
+  width: 200px;
+}
+
+
+#footer{
+  display: grid;}
+
+#footer .footer-inner{
+  display: grid;
+}
+#footer .footer-inner .footer-inner-card{
+  display: grid;
+}
+
+} 
+  
+@media (min-width: 1200px) {
+ #hero {
+  padding-top: 30%;
+ }
+
+}
+/* this is my about section  */
+#about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 15%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#about .about-inner{
+  display: flex;
+}
+
+#about .about-inner .button h5 span{
+  color: red;
+}
+
+
+
+#about .about-inner h2{
+  font-size: xx-large;
+}
+#about .about-inner h5{
+  padding-top: 3%;
+}
+#about .about-inner p{
+  padding-top: 5%;
+}
+
+#service{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 0;
+  background-color: whitesmoke;
+}
+
+#service .h3{
+justify-content: center;
+text-align: center;
+align-items: center;
+font-size: xx-large;
+font-weight: 900;
+}
+ .service-inner {
+  
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  overflow-x: auto;
+  scroll-snap-type:  mandatory;
+}
+#service .service-inner .cards p{
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+#service .service-inner .cards{
+  background-color: white;
+  
+}
+#image{
+  width: 100%;
+}
+
+#testimonial{
+  width: fit-content;
+  display: grid;
+  align-items: center;
+  text-align: center;
+
+}
+
+#testimonial h3{
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  font-size: x-large;
+}
+
+#testimonial .testimonial-inner{ 
+  display: flex;
+justify-content: center;
+padding: 4%;
+align-content: center;
+text-align: center;
+}
+#testimonial .testimonial-inner .testimonial-card{
+  padding: 4%;
+}
+
+#testimonial .testimonial-inner .testimonial-card img{
+  width: 50px;
+}
+
+#api{
+  display: grid;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+#api-inner{
+  display: block;
+}
+
+#api h3{
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+
+
+#footer{
+background-color: black;
+display: grid;
+color: white;
+width: 100%;
+align-items: center;
+}
+
+#footer .logo img{
+  width:100px ;
+  height: auto;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer .footer-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 5%;
+}
+#footer span{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
