@@ -143,10 +143,21 @@ gap: 20%;
   font-size: xx-large;
   color: white;
 }
+
+/* this is for the ipad pro  */
 @media (min-width: 1024px) {
-  #hero .hero-inner p{
-    padding-left: 70%;
+header .logo img{
+  width: 100%;
+}
+
+#about {
+  
+}
+
+.hero-inner p{
+    
   }
+
 
   #about{
     display: flex;
@@ -156,7 +167,26 @@ gap: 20%;
     display: flex;
   }
 
+  #api h3{
+    text-align: center;
+  }
+
+  .api-inner{
+    display: flex;
+    margin-bottom: 3%;
+    padding-top: 80px;
+  }
   
+#api h5 {
+  text-align: center;
+}
+
+#footer .logo img {
+  width: 30%;
+  justify-content: center;
+  padding-left: 45%;
+} 
+
 }
 #hero .hero-inner p{
   padding-left:90%;
@@ -171,6 +201,7 @@ gap: 20%;
  
   #hero .hero-inner h1{
     padding-top:120% ;
+    display: block;
   }
 
   #hero .hero-inner p{
@@ -180,6 +211,10 @@ gap: 20%;
   #about{
   display: grid;
   }
+
+ .service-inner .cards img{
+  width: 100%;
+ } 
 
   #about .about-inner .button h5 {
 padding-top: 240%;
